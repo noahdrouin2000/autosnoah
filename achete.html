@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./achete.css" />
+    <title>Autos Noah | Concession d’autos usagées</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Autos Noah-1.png" />
+  </head>
+  <body>
+    <div class="first-sect">
+      <div class="bg-img-financement">
+        <div class="first-sect-nav">
+          <img
+            src="../Images/Autos Noah-1.png"
+            alt="Plaza Autos"
+            class="logo"
+          />
+          <div class="nav">
+            <div class="categories-img-titles">
+              <ul>
+                <a href="../Inventaire/inventaire.html"
+                  ><li class="cars-li">
+                    <img src="../Images/sedan.png" alt="voiture" id="sedan" />
+                    <div class="red-line"></div>
+                    <h5>Voiture</h5>
+                  </li>
+                </a>
+                <a href="../Inventaire/inventaire.html"
+                  ><li class="cars-li">
+                    <img src="../Images/car.png" alt="VUS" id="vus" />
+                    <div class="red-line"></div>
+                    <h5>VUS</h5>
+                  </li>
+                </a>
+                <a href="../Inventaire/inventaire.html"
+                  ><li class="cars-li">
+                    <img
+                      src="../Images/camionnette.png"
+                      alt="camionnette"
+                      id="camionnette"
+                    />
+                    <div class="red-line"></div>
+                    <h5>Pick-up</h5>
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div class="nav-right">
+              <div class="vl"></div>
+              <a href="../Inventaire/inventaire.html"
+                ><h2 class="inventaire">Inventaire</h2></a
+              >
+              <div class="dropdown">
+                <button class="dropbtn">
+                  <img src="../Images/menu.png" alt="Menu" />
+                </button>
+                <div class="dropdown-content">
+                  <a href="../Landing/index.html">Accueil</a>
+                  <a href="../Financement/financement.html">Financement</a>
+                  <a href="achete.html">On Achète</a>
+                  <a href="../Équipe/equipe.html">Notre Équipe</a>
+                  <a href="#fourth-sect">Nous Joindre</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-cont">
+      <div class="title-cont-cont">
+        <div class="title-cont">
+          <h1 class="h1-title">Nous achetons votre <br />voiture!</h1>
+          <div class="underline"></div>
+          <h1 class="h1-text">
+            Nous acheterons votre voiture même<br />
+            si vous n'achetez pas chez nous!
+          </h1>
+        </div>
+        <div class="container-div">
+          <div id="container">
+            <form action="#" method="post" id="contact_form">
+              <div class="name">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  placeholder="Mon nom est"
+                  name="name"
+                  id="name_input"
+                  required
+                />
+              </div>
+              <div class="email">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  placeholder="Mon e-mail est"
+                  name="email"
+                  id="email_input"
+                  required
+                />
+              </div>
+              <div class="telephone">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  placeholder="Mon numéro est"
+                  name="telephone"
+                  id="telephone_input"
+                  required
+                />
+              </div>
+              <div class="marque">
+                <label for="marque"></label>
+                <input
+                  type="text"
+                  placeholder="Marque"
+                  name="marque"
+                  id="marque_input"
+                  required
+                />
+              </div>
+              <div class="modele">
+                <label for="modele"></label>
+                <input
+                  type="text"
+                  placeholder="Modèle"
+                  name="modele"
+                  id="modele_input"
+                  required
+                />
+              </div>
+              <div class="annee">
+                <label for="annee"></label>
+                <input
+                  type="text"
+                  placeholder="Année"
+                  name="anne"
+                  id="anne_input"
+                  required
+                />
+              </div>
+              <div class="submit">
+                <input
+                  type="submit"
+                  value="envoyer votre demande"
+                  id="form_button"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fourth-sect" class="fourth-sect">
+      <div class="no-map">
+        <h1 class="fourth-sect-title">Pour nous visiter</h1>
+        <div class="fourth-sect-text">
+          <div class="fourth-sect-p-horaire">
+            <i class="fa-solid fa-calendar-days" id="clock"></i>
+            <ul>
+              <li>Lundi: 9:00 à 19:30</li>
+              <li>Mardi: 9:00 à 19:30</li>
+              <li>Mercredi: 9:00 à 19:30</li>
+              <li>Jeudi: 9:00 à 19:30</li>
+              <li>Vendredi: 9:00 à 18:00</li>
+              <li>Samedi: 10:00 à 15:00</li>
+            </ul>
+          </div>
+          <div class="fourth-sect-p-adresse">
+            <i class="fa-regular fa-map-location-dot" id="map"></i>
+            <p>302 rue Seigneuriale Québec, QC G1C 3P6</p>
+            <h4>
+              <a href="https://goo.gl/maps/nZgskg7ngP3HQwxM7">Directions</a>
+            </h4>
+          </div>
+          <div class="map-div">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2727.198837749106!2d-71.2004585!3d46.8791367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8bc4a3bccbdcb%3A0x6e4c6b1c5aa5ea76!2s302%20Rue%20Seigneuriale%2C%20Qu%C3%A9bec%2C%20QC!5e0!3m2!1sen!2sca!4v1675787604688!5m2!1sen!2sca"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-maindiv">
+        <div class="footer-div">
+          <img
+            class="footer-img"
+            src="../Images/traffic white.png"
+            alt="inventaire"
+          />
+          <h1>Inventaire</h1>
+          <ul>
+            <a href="../Inventaire/inventaire.html"><li>Voitures</li></a>
+            <a href="../Inventaire/inventaire.html"><li>VUS</li></a>
+            <a href="../Inventaire/inventaire.html"><li>Pick-ups</li></a>
+          </ul>
+        </div>
+        <div class="footer-div">
+          <img
+            class="footer-img"
+            src="../Images/dollar white.png"
+            alt="financement"
+          />
+          <h1>Financement</h1>
+          <ul>
+            <li>
+              <a href="../Financement/financement.html#credit-total-cont"
+                >Demande</a
+              >
+            </li>
+            <li>
+              <a href="../Financement/financement.html#form-cont"
+                >Demande Simplifiée</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-div">
+          <img
+            class="footer-img"
+            src="../Images/multiple-users-silhouette.svg"
+            alt="notre équipe"
+          />
+          <h1>Notre Équipe</h1>
+          <ul>
+            <li><a href="../Équipe/equipe.html#propos">À propos</a></li>
+            <li><a href="../Équipe/equipe.html#equipe">L'Équipe</a></li>
+          </ul>
+        </div>
+        <div class="footer-div">
+          <img
+            class="footer-img"
+            src="../Images/telephone.png"
+            alt="nous joindre"
+          />
+          <h1>Nous Joindre</h1>
+          <ul>
+            <li>Autos Noah</li>
+            <li>
+              <a href="https://goo.gl/maps/nZgskg7ngP3HQwxM7"
+                >302 rue Seigneuriale <br />Québec, Qc, G1C 3P6</a
+              >
+            </li>
+            <li><a href="tel:4183531111">(418) 353-1111</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-btn">
+        <a href="achete.html">Vendez-nous votre voiture!</a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/0576c061e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="./achete.js"></script>
+  </body>
+</html>
