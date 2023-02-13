@@ -286,7 +286,7 @@ html {
 
 .second-sect {
   height: 100%;
-  background-image: url(../Images/bg-ovale.png);
+  background-image: url(./bg-ovale.png);
   background-size: cover;
   overflow: hidden;
   display: flex;
@@ -407,7 +407,7 @@ html {
 }
 
 .third-sect-img {
-  background-image: url(../Images/pexels-antoni-shkraba-7144174.jpg);
+  background-image: url(./pexels-antoni-shkraba-7144174.jpg);
   height: 48rem;
   background-size: cover;
   background-attachment: fixed;
@@ -497,7 +497,7 @@ html {
 .fourth-sect {
   position: relative;
   height: 100rem;
-  background: url(../Images/redMapSquare.png);
+  background: url(./redMapSquare.jpg);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -632,7 +632,7 @@ html {
   position: relative;
   top: -46rem;
   height: 80%;
-  background-image: url(../Images/bg-ovale.png);
+  background-image: url(./bg-ovale.png);
   background-size: cover;
   overflow: hidden;
 }

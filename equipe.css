@@ -26,7 +26,7 @@ html {
 }
 
 .bg-img-equipe {
-  background-image: url(../Images/pexels-fauxels-3184339.jpg);
+  background-image: url(./pexels-fauxels-3184339.jpg);
   height: 100%;
 
   background-size: cover;
@@ -326,7 +326,7 @@ html {
 .fourth-sect {
   position: relative;
   height: 100rem;
-  background: url(../Images/redMapSquare.png);
+  background: url(./redMapSquare.jpg);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -460,7 +460,7 @@ html {
   position: relative;
   top: -30rem;
   height: 80%;
-  background-image: url(../Images/bg-ovale.png);
+  background-image: url(./bg-ovale.png);
   background-size: cover;
   overflow: hidden;
 }
