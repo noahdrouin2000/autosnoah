@@ -85,8 +85,10 @@ html {
 
 .categories-img-titles img {
   cursor: pointer;
-  height: fit-content;
+  height: 6rem;
   position: relative;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   top: 1rem;
 }
@@ -97,6 +99,8 @@ html {
   display: block;
   background-color: #ec1d23;
   margin: auto auto 0.3rem auto;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -105,6 +109,8 @@ html {
   font-weight: 600;
   color: #707070;
   cursor: pointer;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -129,6 +135,8 @@ html {
   font-weight: 400;
   color: #707070;
   height: fit-content;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   font-size: 1.5rem;
 }
@@ -271,6 +279,8 @@ html {
   margin-bottom: 2rem;
   border: 4px solid white;
   cursor: pointer;
+  -moz-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
 
@@ -324,8 +334,7 @@ html {
 /* Fourth Section */
 
 .fourth-sect {
-  position: relative;
-  height: 100rem;
+  height: 85rem;
   background: url(./redMapSquare.jpg);
   display: flex;
   flex-direction: column;
@@ -334,7 +343,7 @@ html {
 }
 
 .no-map {
-  margin-top: 10rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,7 +381,7 @@ html {
 
 .fourth-sect-p-adresse {
   width: 100%;
-  height: 100%;
+  height: 37rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,7 +390,7 @@ html {
 
 .fourth-sect-p-horaire {
   width: 100%;
-  height: 100%;
+  height: 37rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,11 +418,6 @@ html {
   border: none;
 }
 
-.fourth-sect-p-adresse a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
 .fourth-sect-p-adresse h4 {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -424,7 +428,9 @@ html {
     rgba(195, 0, 7, 1) 100%
   );
   border: 1.3px solid #707070;
-  transition: 0.35s;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -13px;
   border-radius: 3px;
   width: 13rem;
@@ -446,6 +452,11 @@ html {
   margin-top: 3rem;
 }
 
+.fourth-sect-p-adresse a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .fourth-sect-p-adresse img {
   margin-bottom: 0.1rem;
 }
@@ -458,9 +469,9 @@ html {
 
 .footer {
   position: relative;
-  top: -30rem;
-  height: 80%;
-  background-image: url(./bg-ovale.png);
+  top: 0;
+  height: 60%;
+  background-color: #707070;
   background-size: cover;
   overflow: hidden;
 }
@@ -475,7 +486,7 @@ html {
   align-items: center;
   justify-content: space-around;
   padding-inline: 5rem;
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .footer-div {
@@ -506,12 +517,24 @@ html {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: 0.4s ease;
   margin-left: 4px;
   line-height: 1.8rem;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .footer li:hover {
+  color: rgb(236, 29, 35);
+}
+
+.footer a {
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.footer a:hover {
   color: rgb(236, 29, 35);
 }
 
@@ -533,7 +556,9 @@ html {
     rgba(195, 0, 7, 1) 100%
   );
   border: 1.6px solid #707070;
-  transition: 0.35s;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -13px;
   width: 28rem;
   height: 5rem;
@@ -549,12 +574,4 @@ html {
   color: hsl(0, 0%, 99%);
   transform: scale(1.02);
   box-shadow: rgba(0, 0, 0, 0.62) 0px 25px 27px -13px;
-}
-
-.footer a {
-  transition: 0.4s ease;
-}
-
-.footer a:hover {
-  color: rgb(236, 29, 35);
 }

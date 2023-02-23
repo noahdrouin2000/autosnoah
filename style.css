@@ -17,11 +17,13 @@ body,
 html {
   height: 100%;
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 .first-sect {
+  position: relative;
   display: block;
-  height: 115vh;
+  height: 90vh;
   background-color: hsl(0, 0%, 93%);
 }
 
@@ -76,8 +78,10 @@ html {
 
 .categories-img-titles img {
   cursor: pointer;
-  height: fit-content;
+  height: 6rem;
   position: relative;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   top: 1rem;
 }
@@ -88,6 +92,8 @@ html {
   display: block;
   background-color: #ec1d23;
   margin: auto auto 0.3rem auto;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -96,6 +102,8 @@ html {
   font-weight: 600;
   color: #707070;
   cursor: pointer;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -120,6 +128,8 @@ html {
   font-weight: 400;
   color: #707070;
   height: fit-content;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -174,45 +184,51 @@ html {
   display: block;
 }
 
-.hwrap {
+.slider {
+  position: relative;
   width: 70vw;
-  margin-inline: auto;
-  height: 37vw;
-  overflow: hidden;
-  position: relative;
-  top: -3rem;
+  margin: -1.5vw auto 0 auto;
+  height: 18vw;
 }
 
-.hmove {
-  display: flex;
-  position: relative;
-  top: 0;
-  right: 0;
+.slider img {
+  width: 70vw;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
-.hslide {
-  width: 100%;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.slide-img {
-  width: 100%;
-  height: 70vh;
-  filter: brightness(80%);
-  border-radius: 1px;
-}
-
-.text-slide {
-  width: 95rem;
+.slide {
   position: absolute;
-  top: 53%;
-  margin-left: 3rem;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
-  letter-spacing: 0.1rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-caption h1 {
+  color: #fff;
+  letter-spacing: 0.1vw;
   font-weight: 400;
-  font-size: 2.85rem;
+  font-size: 2.2vw;
+  width: 35vw;
+  margin-bottom: 2vw;
+  line-height: 3vw;
 }
 
 .btn-slide {
@@ -221,65 +237,68 @@ html {
     rgba(237, 29, 36, 1) 0%,
     rgba(195, 0, 7, 1) 100%
   );
-  position: relative;
-  top: -11.5rem;
-  margin-left: 3rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.6rem;
+  padding: 0.75vw 1.5vw;
+  font-size: 1.25vw;
   text-decoration: none;
   border-radius: 0.5rem;
   color: #fff;
-  border: 1.3px solid #707070;
-  transition: 0.35s;
+  border: 0.075vw solid #707070;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -13px;
+  z-index: 10;
 }
 
 .btn-slide:hover {
-  top: -11.8rem;
   box-shadow: rgba(0, 0, 0, 0.62) 0px 25px 27px -13px;
 }
 
-#equipe-btn {
-  top: -14.7rem;
+.slider-controls {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-#equipe-btn:hover {
-  top: -15rem;
+.slider-controls-one {
+  width: 50%;
+  z-index: 4;
 }
 
-#quebec {
-  top: 60%;
+.slider-controls-two {
+  width: 50%;
+  z-index: 4;
 }
 
-@keyframes slideh {
-  0% {
-    right: 0;
-  }
-  30% {
-    right: 0;
-  }
-  33% {
-    right: 100%;
-  }
-  63% {
-    right: 100%;
-  }
-  66% {
-    right: 200%;
-  }
-  97% {
-    right: 200%;
-  }
-  100% {
-    right: 0;
-  }
-}
-.hmove {
-  animation: slideh linear 12s infinite;
+.prev,
+.next {
+  position: absolute;
+  padding: 0 1vw;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 50% 50% 0;
+  cursor: pointer;
+  height: 4vw;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hmove:hover {
-  animation-play-state: paused;
+.next {
+  right: 0;
+  border-radius: 50% 0 0 50%;
+  left: auto;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: hsla(358, 84%, 52%, 0.7);
 }
 
 /* Second Section */
@@ -291,7 +310,6 @@ html {
   overflow: hidden;
   display: flex;
   position: relative;
-  top: -14rem;
   flex-direction: column;
   align-items: center;
 }
@@ -409,21 +427,19 @@ html {
 .third-sect-img {
   background-image: url(./pexels-antoni-shkraba-7144174.jpg);
   height: 48rem;
-  background-size: cover;
+  background-size: 105%;
   background-attachment: fixed;
-  filter: blur(6px) brightness(77%);
   z-index: 2;
   position: relative;
-  top: -15rem;
 }
 
 .third-sect {
-  position: relative;
+  position: absolute;
   top: 0;
   z-index: 9999;
   margin-left: 20px;
   margin-right: 20px;
-  top: -61rem;
+  width: 100vw;
 }
 
 .scroll-title {
@@ -472,7 +488,9 @@ html {
     rgba(195, 0, 7, 1) 100%
   );
   border: 1.3px solid #707070;
-  transition: 0.35s;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -13px;
   width: 17rem;
   height: 4.3rem;
@@ -495,18 +513,16 @@ html {
 /* Fourth Section */
 
 .fourth-sect {
-  position: relative;
-  height: 100rem;
+  height: 85rem;
   background: url(./redMapSquare.jpg);
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  top: -16rem;
 }
 
 .no-map {
-  margin-top: 10rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -544,7 +560,7 @@ html {
 
 .fourth-sect-p-adresse {
   width: 100%;
-  height: 100%;
+  height: 37rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -553,7 +569,7 @@ html {
 
 .fourth-sect-p-horaire {
   width: 100%;
-  height: 100%;
+  height: 37rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -591,7 +607,9 @@ html {
     rgba(195, 0, 7, 1) 100%
   );
   border: 1.3px solid #707070;
-  transition: 0.35s;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -13px;
   border-radius: 3px;
   width: 13rem;
@@ -630,9 +648,9 @@ html {
 
 .footer {
   position: relative;
-  top: -46rem;
-  height: 80%;
-  background-image: url(./bg-ovale.png);
+  top: 0;
+  height: 60%;
+  background-color: #707070;
   background-size: cover;
   overflow: hidden;
 }
@@ -647,7 +665,7 @@ html {
   align-items: center;
   justify-content: space-around;
   padding-inline: 5rem;
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .footer-div {
@@ -680,7 +698,9 @@ html {
   cursor: pointer;
   margin-left: 4px;
   line-height: 1.8rem;
-  transition: 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .footer li:hover {
@@ -688,7 +708,9 @@ html {
 }
 
 .footer a {
-  transition: 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .footer a:hover {
@@ -713,7 +735,9 @@ html {
     rgba(195, 0, 7, 1) 100%
   );
   border: 1.6px solid #707070;
-  transition: 0.35s;
+  -moz-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -13px;
   width: 28rem;
   height: 5rem;

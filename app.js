@@ -7,6 +7,7 @@ tl.fromTo("#clock, #map", { y: 0 }, { y: -8, yoyo: true, repeat: -1 });
 
 const carsLi = document.querySelectorAll(".cars-li");
 const fourthSectBg = document.querySelector(".fourth-sect");
+const slides = document.getElementsByClassName("slide");
 
 //Event Listeners
 
@@ -51,3 +52,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function prevSlide() {
+  showSlides(slideIndex -= 1);
+}
+
+function nextSlide() {
+  showSlides(slideIndex += 1);
+}
+
+function showSlides(n) {
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slides[slideIndex - 1].classList.add("active");
+}
+ 
