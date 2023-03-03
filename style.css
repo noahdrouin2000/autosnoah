@@ -49,6 +49,7 @@ html {
   height: 10%;
   width: 10%;
   display: flex;
+  top: -0.5vw;
   left: 20vw;
   background-color: #ffff;
   z-index: 2;
