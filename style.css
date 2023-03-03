@@ -170,6 +170,19 @@ html {
   cursor: pointer;
 }
 
+.dropdown-active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -4.25vw;
+  background-color: #fff;
+  width: 10vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0.4vw;
+  cursor: pointer;
+}
+
 .dropdown-content a {
   color: #707070;
   padding: 1vw 0;
@@ -182,11 +195,6 @@ html {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
   color: rgb(236, 29, 35);
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
 }
 
 .slider {
@@ -1018,7 +1026,8 @@ html {
     height: 6vw;
   }
   .second-sect {
-    height: 63vw;
+    height: 62vw;
+    background-size: cover;
   }
   .title-div {
     top: 19vw;
@@ -1148,15 +1157,15 @@ html {
 
 @media screen and (max-width: 768px) {
   .first-sect {
-    height: 70vw;
+    height: 107vw;
   }
   .nav {
     height: 14vw;
   }
   .logo {
     border: 0.1vw solid #707070;
-    width: 16vw;
-    left: 6vw;
+    width: 19vw;
+    left: 2vw;
   }
   .categories-img-titles {
     margin: 0;
@@ -1165,10 +1174,10 @@ html {
     top: 2vw;
   }
   .categories-img-titles li {
-    width: 8.75vw;
+    width: 10vw;
   }
   .categories-img-titles h5 {
-    font-size: 1.85vw;
+    font-size: 2vw;
   }
   .nav-right {
     margin-top: 2vw;
@@ -1180,7 +1189,7 @@ html {
     margin: auto 3vw auto 2vw;
   }
   .inventaire {
-    font-size: 2.25vw;
+    font-size: 2.75vw;
   }
   .dropbtn img {
     top: 0.1vw;
@@ -1198,22 +1207,25 @@ html {
     padding: 1.9vw 0;
   }
   .slider {
-    width: 95vw;
-    margin: -2.5vw auto 0 auto;
-    height: 24vw;
+    width: 97vw;
+    margin: -7vw auto 0 auto;
+    height: 45vw;
   }
   .slider img {
-    width: 95vw;
+    width: 97vw;
+    height: 90vw;
+    object-fit: none;
   }
   .slide-caption h1 {
     letter-spacing: 0.25vw;
-    font-size: 3.25vw;
-    width: 50vw;
-    margin-bottom: 3.5vw;
+    line-height: 4.5vw;
+    font-size: 4vw;
+    width: 60vw;
+    margin-bottom: 3.75vw;
   }
   .btn-slide {
     padding: 1vw 2vw;
-    font-size: 2.1vw;
+    font-size: 2.5vw;
     border-radius: 0.5vw;
     border-width: 0.15vw;
   }
@@ -1225,6 +1237,7 @@ html {
   }
   .second-sect {
     height: 75vw;
+    background-image: url(./bg-ovale2.jpg);
   }
   .title-div {
     top: 22vw;
@@ -1372,96 +1385,94 @@ html {
 
 @media screen and (max-width: 550px) {
   .first-sect {
-    height: 85vw;
-  }
-  .first-sect-nav {
-    width: 100vw;
+    height: 150vw;
   }
   .nav {
     height: 18vw;
-    width: 100%;
-    margin-left: 6vw;
+    width: 70%;
   }
   .logo {
     border: 0.15vw solid #707070;
     width: 20vw;
-    left: 4vw;
+    left: -1vw;
   }
   .categories-img-titles img {
     top: 2.5vw;
   }
   .categories-img-titles li {
-    width: 11vw;
+    width: 12vw;
   }
   .categories-img-titles h5 {
-    font-size: 2.25vw;
+    font-size: 2.5vw;
   }
   .nav-right {
-    margin-top: 3vw;
-    width: 30%;
+    width: 10%;
+    top: 0.5vw;
   }
   .vl {
-    border-left: 0.25vw solid #707070;
-    height: 4vw;
+    height: 5vw;
+    margin: auto 7vw auto 5vw;
   }
   .inventaire {
-    font-size: 2.75vw;
+    display: none;
   }
   .dropbtn img {
-    height: 2.5vw;
+    height: 2.75vw;
+    top: 0.2vw;
   }
   .dropdown-content {
     right: 0;
     top: 5vw;
     border-radius: 1vw;
-    width: 20vw;
+    width: 26vw;
   }
   .dropdown-content a {
-    font-size: 2.1vw;
-    padding: 2vw 0;
+    font-size: 2.75vw;
+    padding: 2.75vw 0;
   }
   .slider {
-    width: 98vw;
+    width: 97vw;
     margin: -2.75vw auto 0 auto;
+    height: 60vw;
   }
   .slider img {
-    width: 98vw;
+    width: 97vw;
+    height: 120vw;
+    object-fit: cover;
   }
-  /* Rendu ici */
   .slide-caption h1 {
-    letter-spacing: 0.4vw;
-    font-size: 4vw;
-    width: 60vw;
-    line-height: 4.25vw;
-    margin-bottom: 2vw;
+    letter-spacing: 0.25vw;
+    line-height: 5.5vw;
+    font-size: 5vw;
+    width: 75vw;
   }
   .btn-slide {
-    padding: 1vw 2vw;
-    font-size: 2.1vw;
-    border-radius: 0.5vw;
-    border-width: 0.15vw;
+    padding: 1.5vw 2.5vw;
+    font-size: 3.25vw;
+    border-radius: 0.75vw;
+    border-width: 0.25vw;
   }
   .prev,
   .next {
-    padding: 0 1.5vw;
-    font-size: 4vw;
-    height: 6.5vw;
+    padding: 0 2vw;
+    font-size: 6vw;
+    height: 9vw;
   }
   .second-sect {
-    height: 75vw;
+    height: 100vw;
   }
   .title-div {
-    top: 22vw;
+    top: 30vw;
   }
   .title2 {
-    font-size: 6.5vw;
+    font-size: 7vw;
   }
   .meilleur {
-    right: 12vw;
+    right: 14vw;
   }
   .financement {
-    right: 18vw;
-    margin-top: 5vw;
+    right: 22vw;
+    margin-top: 10vw;
   }
   .apres-vente {
     left: 6vw;
@@ -1471,91 +1482,95 @@ html {
     margin-top: 2vw;
   }
   .qualite {
-    left: 17vw;
-    margin-top: 7vw;
+    left: 22vw;
+    margin-top: 10vw;
+  }
+  .financement,
+  .qualite {
+    width: 26vw;
   }
   .meilleur,
-  .financement,
-  .apres-vente,
-  .qualite {
-    width: 28vw;
+  .apres-vente {
+    width: 30vw;
   }
   .meilleur h2,
   .financement h2,
   .apres-vente h2,
   .qualite h2 {
-    font-size: 3vw;
-    margin-bottom: 0.5vw;
+    font-size: 3.75vw;
+    margin-bottom: 0.75vw;
   }
   .meilleur p,
   .financement p,
   .apres-vente p,
   .qualite p {
-    font-size: 1.5vw;
-    line-height: 2vw;
+    font-size: 1.8vw;
+    line-height: 2.25vw;
   }
   .employee-img {
-    height: 42vw;
+    height: 55vw;
   }
   .third-sect-cont {
-    height: 75vw;
+    height: 95vw;
   }
   .third-sect-img {
-    height: 75vw;
-    background-attachment: scroll;
-    background-size: 115%;
+    height: 95vw;
+    background-size: cover;
   }
   .scroll-title {
-    margin: 0 0 9vw 0;
-    font-size: 9vw;
+    margin: 0 0 10vw 0;
+    font-size: 12vw;
   }
   .scroll-ul-icon {
-    width: 95%;
+    width: 100%;
   }
   .scroll-li-icon-img {
-    width: 20vw;
+    width: 24vw;
   }
   .scroll-ul-btn {
-    margin-top: 5vw;
-    width: 95%;
+    margin-top: 4vw;
+    width: 100%;
   }
   .scroll-li-btn a {
-    width: 23vw;
-    height: 5.5vw;
-    font-size: 2.5vw;
-    border-radius: 0.75vw;
+    width: 26vw;
+    height: 6vw;
+    font-size: 2.75vw;
+    border-radius: 1vw;
   }
   .fourth-sect {
-    height: 100vw;
+    height: 130vw;
   }
   .fourth-sect-text {
-    font-size: 1.85vw;
+    font-size: 2.3vw;
   }
   .fourth-sect-title {
-    margin-bottom: 7vw;
-    font-size: 7vw;
+    margin-bottom: 9vw;
+    font-size: 8.5vw;
   }
   #map {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   #clock {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .fourth-sect-p-adresse {
-    height: 45vw;
+    height: 55vw;
   }
   .fourth-sect-p-adresse p {
-    width: 85%;
-    margin: 2vw auto 0 auto;
+    width: 90%;
+    margin: 3vw auto 0 auto;
   }
   .fourth-sect-p-horaire {
-    height: 45vw;
+    height: 55vw;
+  }
+  .fourth-sect-p-horaire ul {
+    margin: 3vw 0 0 0;
   }
   .fourth-sect-p-horaire li {
     margin-top: 0.5vw;
   }
   .map-div {
-    height: 45vw;
+    height: 55vw;
   }
   .fourth-sect-p-adresse h4 {
     width: 18vw;
@@ -1566,31 +1581,30 @@ html {
     margin: 2vw auto 0 auto;
   }
   .footer {
-    height: 53vw;
+    height: 60vw;
   }
   .footer-div {
-    margin-top: 10vw;
+    margin-top: 12vw;
   }
   .footer-img {
-    height: 9vw;
+    height: 10vw;
   }
   .footer h1 {
-    font-size: 2.5vw;
+    font-size: 2.75vw;
   }
   .footer ul {
-    margin-top: 1.75vw;
+    margin-top: 2vw;
   }
   .footer li {
-    margin-bottom: 1.25vw;
-    font-size: 1.75vw;
-    line-height: 2.5vw;
+    margin-bottom: 1.5vw;
+    font-size: 2vw;
+    line-height: 2.7vw;
   }
   .footer-btn a {
-    width: 32vw;
-    height: 6vw;
-    font-size: 2.1vw;
-    border-width: 0.25vw;
-    border-radius: 1vw;
+    width: 43vw;
+    height: 7.5vw;
+    font-size: 2.75vw;
+    border-width: 0.4vw;
   }
 }
 

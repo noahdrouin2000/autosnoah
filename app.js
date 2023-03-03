@@ -6,6 +6,8 @@ tl.fromTo("#clock, #map", { y: 0 }, { y: -8, yoyo: true, repeat: -1 });
 //Selector
 
 const carsLi = document.querySelectorAll(".cars-li");
+const ddMenu = document.querySelectorAll(".dd-menu");
+const ddContent = document.querySelectorAll(".dropdown-content");
 const fourthSectBg = document.querySelector(".fourth-sect");
 const slides = document.getElementsByClassName("slide");
 
@@ -77,3 +79,8 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].classList.add("active");
 }
+
+
+ddMenu[0].addEventListener("click", function(){
+  ddContent[0].classList.toggle("dropdown-active");
+});
