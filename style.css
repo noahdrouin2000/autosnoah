@@ -1609,9 +1609,387 @@ html {
 }
 
 @media screen and (max-width: 425px) {
+  .first-sect {
+    height: 170vw;
+  }
+  .nav {
+    height: 19vw;
+  }
+  .logo {
+    border: 0.2vw solid #707070;
+    width: 22vw;
+    left: -2vw;
+  }
+  .categories-img-titles img {
+    top: 2.85vw;
+  }
+  .categories-img-titles li {
+    width: 14vw;
+  }
+  .categories-img-titles h5 {
+    font-size: 2.8vw;
+  }
+  .nav-right {
+    width: 5%;
+  }
+  .vl {
+    height: 6vw;
+    margin: auto 5vw auto 5vw;
+  }
+  .dropbtn img {
+    height: 3.25vw;
+  }
+  .dropdown-content {
+    top: 6vw;
+    border-radius: 1.5vw;
+  }
+  .dropdown-content a {
+    font-size: 2.8vw;
+  }
+  .slider {
+    height: 70vw;
+  }
+  .slider img {
+    height: 140vw;
+  }
+  .slide-caption h1 {
+    letter-spacing: 0.5vw;
+    line-height: 6vw;
+    font-size: 5.5vw;
+    width: 80vw;
+  }
+  .btn-slide {
+    padding: 2vw 4vw;
+    font-size: 3.75vw;
+    border-radius: 1vw;
+  }
+  .prev,
+  .next {
+    padding: 0 2.5vw;
+    font-size: 6.5vw;
+    height: 10vw;
+  }
+  .second-sect {
+    height: 105vw;
+  }
+  .title-div {
+    top: 32vw;
+  }
+  .title2 {
+    font-size: 7.5vw;
+  }
+  .meilleur {
+    right: 14vw;
+  }
+  .financement {
+    right: 22vw;
+    margin-top: 6vw;
+  }
+  .apres-vente {
+    left: 9vw;
+  }
+  .qualite {
+    left: 22vw;
+    margin-top: 9vw;
+  }
+  .financement,
+  .qualite {
+    width: 26vw;
+  }
+  .meilleur,
+  .apres-vente {
+    width: 33vw;
+  }
+  .meilleur h2,
+  .financement h2,
+  .apres-vente h2,
+  .qualite h2 {
+    font-size: 4vw;
+  }
+  .meilleur p,
+  .financement p,
+  .apres-vente p,
+  .qualite p {
+    font-size: 2.25vw;
+    line-height: 2.75vw;
+  }
+  .employee-img {
+    height: 55vw;
+    margin-left: 2vw;
+  }
+  .third-sect-cont {
+    height: 125vw;
+  }
+  .third-sect-img {
+    height: 125vw;
+    background-size: cover;
+    background-position: -20vw;
+  }
+  .scroll-title {
+    margin: 0 0 10vw 0;
+    font-size: 14vw;
+  }
+  .scroll-li-icon-img {
+    width: 26vw;
+  }
+  .scroll-ul-btn {
+    margin-top: 4.5vw;
+  }
+  .scroll-li-btn a {
+    width: 28vw;
+    height: 7vw;
+    font-size: 3.2vw;
+    border-radius: 1.25vw;
+  }
+  .fourth-sect {
+    height: 150vw;
+  }
+  .fourth-sect-text {
+    font-size: 2.75vw;
+  }
+  .fourth-sect-title {
+    margin-bottom: 12vw;
+    font-size: 9vw;
+  }
+  #map {
+    font-size: 7.5vw;
+  }
+  #clock {
+    font-size: 7.5vw;
+  }
+  .fourth-sect-p-adresse {
+    height: 60vw;
+  }
+  .fourth-sect-p-horaire {
+    height: 60vw;
+  }
+  .map-div {
+    height: 60vw;
+  }
+  .fourth-sect-p-adresse h4 {
+    width: 20vw;
+    height: 6vw;
+    font-size: 2.75vw;
+    border-radius: 1vw;
+    border-width: 0.5vw;
+    margin: 2.5vw auto 0 auto;
+  }
+  .footer {
+    height: 70vw;
+  }
+  .footer-div {
+    margin-top: 15vw;
+  }
+  .footer-img {
+    height: 12vw;
+  }
+  .footer h1 {
+    font-size: 3.25vw;
+  }
+  .footer ul {
+    margin-top: 2.25vw;
+  }
+  .footer li {
+    margin-bottom: 1.5vw;
+    font-size: 2.25vw;
+    line-height: 3vw;
+  }
+  .footer-btn a {
+    width: 48vw;
+    height: 9vw;
+    font-size: 3vw;
+    border-width: 0.5vw;
+  }
 }
 
 @media screen and (max-width: 375px) {
+  .first-sect {
+    height: 190vw;
+  }
+  .nav {
+    height: 21vw;
+  }
+  .logo {
+    border: 0.25vw solid #707070;
+    width: 24vw;
+    left: -2.25vw;
+  }
+  .categories-img-titles li {
+    width: 14vw;
+  }
+  .categories-img-titles h5 {
+    font-size: 3.25vw;
+  }
+  .nav-right {
+    width: 0;
+  }
+  .vl {
+    height: 7.5vw;
+    margin: auto 4vw auto 4vw;
+  }
+  .dropbtn img {
+    height: 4vw;
+  }
+  .dropdown-content {
+    top: 7vw;
+    width: 31vw;
+    border-radius: 1.75vw;
+  }
+  .dropdown-content a {
+    padding-bottom: 4.5vw;
+    font-size: 3vw;
+  }
+  .slider {
+    height: 75vw;
+  }
+  .slider img {
+    height: 150vw;
+  }
+  .slide-caption h1 {
+    letter-spacing: 0.4vw;
+    line-height: 7vw;
+    width: 70vw;
+    margin-bottom: 5vw;
+  }
+  .btn-slide {
+    font-size: 4.25vw;
+    border-radius: 1.2vw;
+  }
+  .prev,
+  .next {
+    padding: 0 3vw;
+    font-size: 7vw;
+    height: 12vw;
+  }
+  .second-sect {
+    height: 110vw;
+  }
+  .title-div {
+    top: 32vw;
+  }
+  .title2 {
+    font-size: 7.75vw;
+  }
+  .meilleur {
+    right: 14vw;
+  }
+  .financement {
+    right: 22vw;
+    margin-top: 6vw;
+  }
+  .apres-vente {
+    left: 9vw;
+  }
+  .qualite {
+    left: 22vw;
+    margin-top: 9vw;
+  }
+  .financement,
+  .qualite {
+    width: 26vw;
+  }
+  .meilleur,
+  .apres-vente {
+    margin-top: -1vw;
+    width: 33vw;
+  }
+  .meilleur h2,
+  .financement h2,
+  .apres-vente h2,
+  .qualite h2 {
+    font-size: 4.1vw;
+  }
+  .meilleur p,
+  .financement p,
+  .apres-vente p,
+  .qualite p {
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  .employee-img {
+    height: 55vw;
+    margin-left: 1vw;
+  }
+  .third-sect-cont {
+    height: 145vw;
+  }
+  .third-sect-img {
+    height: 145vw;
+    background-position: -25vw;
+  }
+  .scroll-title {
+    margin: 0 0 11vw 0;
+    font-size: 14vw;
+  }
+  .scroll-li-icon-img {
+    width: 27vw;
+  }
+  .scroll-ul-btn {
+    margin-top: 7vw;
+  }
+  .scroll-li-btn a {
+    width: 30vw;
+    height: 8vw;
+    font-size: 4vw;
+  }
+  .fourth-sect {
+    height: 275vw;
+  }
+  .fourth-sect-text {
+    font-size: 3.5vw;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .fourth-sect-title {
+    margin-bottom: 15vw;
+    font-size: 10vw;
+  }
+  #map {
+    font-size: 10vw;
+  }
+  #clock {
+    font-size: 10vw;
+  }
+  .fourth-sect-p-adresse {
+    height: 55vw;
+  }
+  .fourth-sect-p-horaire {
+    height: 55vw;
+  }
+  .map-div {
+    height: 55vw;
+  }
+  .fourth-sect-p-adresse h4 {
+    width: 25vw;
+    height: 7.75vw;
+    font-size: 3.2vw;
+    border-radius: 1.25vw;
+    border-width: 0.75vw;
+    margin: 3vw auto 0 auto;
+  }
+  .footer {
+    height: 85vw;
+  }
+  .footer-div {
+    margin-top: 20vw;
+  }
+  .footer-img {
+    height: 13vw;
+  }
+  .footer h1 {
+    font-size: 3.2vw;
+  }
+  .footer li {
+    margin-bottom: 1.7vw;
+    font-size: 2.3vw;
+    line-height: 3.25vw;
+  }
+  .footer-btn a {
+    width: 52vw;
+    height: 10vw;
+    font-size: 3.4vw;
+    border-width: 0.6vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
