@@ -702,6 +702,7 @@ html {
   cursor: pointer;
   margin-left: 0.25vw;
   line-height: 1.4vw;
+  width: 14vw;
   -moz-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -945,6 +946,7 @@ html {
     margin-bottom: 1vw;
     font-size: 1.25vw;
     line-height: 1.75vw;
+    width: 16vw;
   }
   .footer-btn a {
     width: 25vw;
@@ -1071,7 +1073,8 @@ html {
   }
   .third-sect-img {
     height: 55vw;
-    background-size: 175%;
+    background-size: 110%;
+    background-attachment: scroll;
   }
   .scroll-title {
     margin: 0 0 6.5vw 0;
@@ -1146,6 +1149,7 @@ html {
     margin-bottom: 1vw;
     font-size: 1.5vw;
     line-height: 2vw;
+    width: 19vw;
   }
   .footer-btn a {
     width: 29vw;
@@ -1373,6 +1377,7 @@ html {
     margin-bottom: 1.25vw;
     font-size: 1.75vw;
     line-height: 2.5vw;
+    width: 22vw;
   }
   .footer-btn a {
     width: 32vw;
@@ -1599,6 +1604,9 @@ html {
     margin-bottom: 1.5vw;
     font-size: 2vw;
     line-height: 2.7vw;
+  }
+  #adresse-remove {
+    display: none;
   }
   .footer-btn a {
     width: 43vw;
@@ -1993,4 +2001,145 @@ html {
 }
 
 @media screen and (max-width: 320px) {
+  .first-sect {
+    height: 220vw;
+  }
+  .nav {
+    height: 23vw;
+  }
+  .logo {
+    border: 0.3vw solid #707070;
+    width: 27vw;
+    left: -2.75vw;
+  }
+  .dropdown-content {
+    top: 7.5vw;
+    width: 33vw;
+  }
+  .dropdown-content a {
+    font-size: 3.25vw;
+  }
+  .slider {
+    height: 85vw;
+  }
+  .slider img {
+    height: 170vw;
+  }
+  .slide-caption h1 {
+    font-size: 6.25vw;
+  }
+  .btn-slide {
+    font-size: 4.4vw;
+    border-radius: 1.5vw;
+  }
+  .prev,
+  .next {
+    padding: 0 3.5vw;
+    font-size: 9vw;
+    height: 15vw;
+  }
+  .second-sect {
+    height: 120vw;
+  }
+  .title-div {
+    top: 38vw;
+  }
+  .title2 {
+    font-size: 7.8vw;
+  }
+  .financement {
+    right: 23vw;
+    margin-top: 6vw;
+  }
+  .apres-vente {
+    left: 8vw;
+  }
+  .qualite {
+    left: 24vw;
+  }
+  .meilleur,
+  .apres-vente {
+    margin-top: 4vw;
+    width: 35vw;
+  }
+  .meilleur p,
+  .financement p,
+  .apres-vente p,
+  .qualite p {
+    line-height: 3.2vw;
+  }
+  .employee-img {
+    height: 60vw;
+  }
+  .third-sect-cont {
+    height: 175vw;
+  }
+  .third-sect-img {
+    height: 175vw;
+    background-position: -55vw;
+  }
+  .scroll-title {
+    margin: 0 0 15vw 0;
+    font-size: 14vw;
+  }
+  .scroll-li-icon-img {
+    width: 29vw;
+  }
+  .scroll-ul-btn {
+    margin-top: 7vw;
+  }
+  .scroll-li-btn a {
+    width: 31vw;
+    height: 8.5vw;
+    font-size: 4.2vw;
+  }
+  .fourth-sect {
+    height: 320vw;
+  }
+  .fourth-sect-text {
+    font-size: 4vw;
+  }
+  .fourth-sect-title {
+    margin-bottom: 17vw;
+    font-size: 10.5vw;
+  }
+  .fourth-sect-p-adresse {
+    height: 65vw;
+  }
+  .fourth-sect-p-horaire {
+    height: 65vw;
+  }
+  .map-div {
+    height: 65vw;
+  }
+  .fourth-sect-p-adresse h4 {
+    width: 30vw;
+    height: 9vw;
+    font-size: 4vw;
+    border-radius: 1.5vw;
+    margin: 4vw auto 0 auto;
+  }
+  .footer {
+    height: 95vw;
+  }
+  .footer-div {
+    margin-top: 22vw;
+  }
+  .footer h1 {
+    font-size: 3.25vw;
+  }
+  .footer li {
+    margin-bottom: 1.9vw;
+    width: 23vw;
+    font-size: 2.75vw;
+    line-height: 3.75vw;
+  }
+  .footer-btn a {
+    width: 58vw;
+    height: 11vw;
+    font-size: 3.75vw;
+    border-width: 0.75vw;
+    margin-top: 4vw;
+    border-radius: 1.75vw;
+  }
 }

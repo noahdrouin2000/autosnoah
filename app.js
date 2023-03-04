@@ -80,7 +80,6 @@ function showSlides(n) {
   slides[slideIndex - 1].classList.add("active");
 }
 
-
-ddMenu[0].addEventListener("click", function(){
+ddMenu[0].addEventListener("click", function () {
   ddContent[0].classList.toggle("dropdown-active");
 });
