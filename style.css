@@ -43,16 +43,21 @@ html {
   margin: 0 12vw 0 auto;
 }
 
+.logo-a {
+  height: 10vw;
+  top: -0.5vw;
+  left: 20vw;
+  position: relative;
+  z-index: 2;
+}
+
 .logo {
   border: 0.025vw solid #707070;
-  position: relative;
-  height: 10%;
-  width: 10%;
+  height: 100%;
   display: flex;
   top: -0.5vw;
   left: 20vw;
   background-color: #ffff;
-  z-index: 2;
 }
 
 .categories-img-titles {
@@ -768,11 +773,12 @@ html {
     width: 60%;
     height: 10vw;
   }
+  .logo-a {
+    height: 12vw;
+    left: 14vw;
+  }
   .logo {
     border: 0.06vw solid #707070;
-    height: auto;
-    width: 12vw;
-    left: 14vw;
   }
   .categories-img-titles {
     margin: 0 0 0 4vw;
@@ -968,10 +974,12 @@ html {
   .nav {
     height: 12vw;
   }
+  .logo-a {
+    height: 14vw;
+    left: 11vw;
+  }
   .logo {
     border: 0.08vw solid #707070;
-    width: 14vw;
-    left: 11vw;
   }
   .categories-img-titles {
     margin: 0 0 0 3vw;
@@ -1161,15 +1169,20 @@ html {
 
 @media screen and (max-width: 768px) {
   .first-sect {
-    height: 107vw;
+    height: 110vw;
+  }
+  .first-sect-nav {
+    height: fit-content;
   }
   .nav {
     height: 14vw;
   }
+  .logo-a {
+    height: 19vw;
+    left: 2vw;
+  }
   .logo {
     border: 0.1vw solid #707070;
-    width: 19vw;
-    left: 2vw;
   }
   .categories-img-titles {
     margin: 0;
@@ -1212,7 +1225,7 @@ html {
   }
   .slider {
     width: 97vw;
-    margin: -7vw auto 0 auto;
+    margin: -4vw auto 0 auto;
     height: 45vw;
   }
   .slider img {
@@ -1396,10 +1409,12 @@ html {
     height: 18vw;
     width: 70%;
   }
+  .logo-a {
+    height: 20vw;
+    left: -1vw;
+  }
   .logo {
     border: 0.15vw solid #707070;
-    width: 20vw;
-    left: -1vw;
   }
   .categories-img-titles img {
     top: 2.5vw;
@@ -1623,10 +1638,12 @@ html {
   .nav {
     height: 19vw;
   }
+  .logo-a {
+    height: 23vw;
+    left: -2vw;
+  }
   .logo {
     border: 0.2vw solid #707070;
-    width: 22vw;
-    left: -2vw;
   }
   .categories-img-titles img {
     top: 2.85vw;
@@ -1817,10 +1834,12 @@ html {
   .nav {
     height: 21vw;
   }
+  .logo-a {
+    height: 24vw;
+    left: -2.25vw;
+  }
   .logo {
     border: 0.25vw solid #707070;
-    width: 24vw;
-    left: -2.25vw;
   }
   .categories-img-titles li {
     width: 14vw;
@@ -2007,10 +2026,12 @@ html {
   .nav {
     height: 23vw;
   }
+  .logo-a {
+    height: 27vw;
+    left: -2vw;
+  }
   .logo {
     border: 0.3vw solid #707070;
-    width: 27vw;
-    left: -2.75vw;
   }
   .dropdown-content {
     top: 7.5vw;

@@ -43,16 +43,21 @@ html {
   margin: 0 12vw 0 auto;
 }
 
+.logo-a {
+  height: 10vw;
+  top: -0.5vw;
+  left: 20vw;
+  position: relative;
+  z-index: 2;
+}
+
 .logo {
   border: 0.025vw solid #707070;
-  position: relative;
-  height: 10%;
-  width: 10%;
+  height: 100%;
   display: flex;
   top: -0.5vw;
   left: 20vw;
   background-color: #ffff;
-  z-index: 2;
 }
 
 .categories-img-titles {
